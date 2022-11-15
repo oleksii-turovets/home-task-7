@@ -30,7 +30,7 @@
     color: #666666;
 }
 
-.article :hover .article-name{
+.article:hover .article-name{
     text-decoration: underline;
 }
 
@@ -46,8 +46,12 @@
     color: #C9A96E;
 }
 
-.article-theme > object :hover {
+.article-theme:hover {
     text-decoration: underline;
+}
+
+.article-theme:hover +.article-name {
+    text-decoration: none;
 }
 
 .article-name {
